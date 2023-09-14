@@ -16,12 +16,12 @@ export const FrontpageHero = () => {
 
       <Section width="large" verticalPadding="large" noPadding="top">
         <div className={styles.logo}>
-          <span>Oslo</span>
-          <span>Vegetar</span>
-          <span>festival</span>
+          <span>Jule</span>
+          <span>fest i</span>
+          <span>🐳en</span>
           <Block top="5">
             <span className={styles.date}>Kubaparken</span>
-            <span className={styles.date}>25.-26. mai 2024</span>
+            <span className={styles.date}>9.-10. desember 2023</span>
           </Block>
         </div>
 

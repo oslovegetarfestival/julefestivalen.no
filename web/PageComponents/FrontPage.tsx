@@ -36,7 +36,7 @@ const FrontPage: NextPage<Props> = ({ page = {} }) => {
         </Section>
       </Section>
 
-      <BackgroundVideo />
+      {/* <BackgroundVideo /> */}
 
       <Section centerContent width="full" verticalPadding="xlarge">
         <Section width="large" noPadding="sides">
