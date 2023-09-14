@@ -6,6 +6,8 @@ Website and CMS for Julefestivalen.
 
 https://julefestivalen.no
 
+Temp: https://julefestivalen.vercel.app/
+
 ## Development
 
 This is a monorepo for website + Sanity Studio. Built with next.js, React and css modules.
