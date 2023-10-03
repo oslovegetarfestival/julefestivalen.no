@@ -101,7 +101,7 @@ export const SanityBlockModule = ({ data }: Props) => {
   if (blockType === "button") {
     return (
       <Section width="small" verticalPadding="tiny" centerContent>
-        <Button link={data?.url} color={data?.color}>
+        <Button link={data?.url} color="cherry">
           {data?.text}
         </Button>
       </Section>

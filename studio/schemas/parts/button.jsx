@@ -21,19 +21,19 @@ export const button = {
           scheme: ["http", "https", "mailto", "tel"],
         }),
     },
-    {
-      name: "color",
-      title: "Bakgrunnsfarge knapp",
-      description:
-        "Vanlig farge er grønn. Bruk den oransje sparsomt, og da kun på veldig viktige knapper som feks 'Kjøp billett'",
-      type: "string",
-      options: {
-        list: [
-          { title: "Grønn", value: "green" },
-          { title: "Oransje", value: "orange" },
-        ],
-      },
-    },
+    // {
+    //   name: "color",
+    //   title: "Bakgrunnsfarge knapp",
+    //   description:
+    //     "Vanlig farge er grønn. Bruk den oransje sparsomt, og da kun på veldig viktige knapper som feks 'Kjøp billett'",
+    //   type: "string",
+    //   options: {
+    //     list: [
+    //       { title: "Grønn", value: "green" },
+    //       { title: "Oransje", value: "orange" },
+    //     ],
+    //   },
+    // },
   ],
 
   preview: {
