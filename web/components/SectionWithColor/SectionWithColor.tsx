@@ -58,9 +58,7 @@ export const SectionWithColor = ({ data }: Props) => {
 
             {link?.text && (
               <div>
-                <Button color="green" link={link?.url}>
-                  {link.text}
-                </Button>
+                <Button link={link?.url}>{link.text}</Button>
               </div>
             )}
           </Flow>

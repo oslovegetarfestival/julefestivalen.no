@@ -28,7 +28,7 @@ export const FrontpageHero = () => {
         <Block top="7">
           <Button
             size="large"
-            color="orange"
+            color="pink"
             link="https://tikkio.com/tickets/30345-oslo-vegetarfestival-2023"
             isOpenInNewWindow
           >

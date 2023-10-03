@@ -4,7 +4,7 @@
   font-weight: 500;
   border: none;
   border-radius: var(--border-radius);
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
   cursor: pointer;
 
@@ -19,7 +19,7 @@
       margin-left: 0.6em;
       transition: transform 0.3s ease;
     }
-  
+
     &:hover {
       &:after {
         transform: translateX(20%);
@@ -60,11 +60,31 @@
 .color--white {
   background-color: var(--color-almondmilk);
   color: var(--color-kale);
-  
+
   &:hover,
   &:focus {
     color: var(--color-almondmilk);
     background-color: var(--color-cucumber);
+  }
+}
+
+.color--pink {
+  background-color: var(--color-peach);
+  color: var(--color-cherry);
+
+  &:hover,
+  &:focus {
+    filter: brightness(105%);
+  }
+}
+
+.color--cherry {
+  background-color: var(--color-cherry);
+  color: var(--color-almondmilk);
+
+  &:hover,
+  &:focus {
+    filter: brightness(105%);
   }
 }
 

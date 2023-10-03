@@ -115,7 +115,7 @@ const EventMainPage: NextPage<Props> = ({ page = {} }) => {
             </Block>
             <Flex align="center" gap="small" wrap>
               <Button
-                color={currentFilter === "" ? "orange" : "green"}
+                color={currentFilter === "" ? "pink" : "cherry"}
                 size="small"
                 isArrow={false}
                 onClick={() => {
@@ -125,7 +125,7 @@ const EventMainPage: NextPage<Props> = ({ page = {} }) => {
                 Vis alt
               </Button>
               <Button
-                color={currentFilter === "Kokkekursteltet" ? "orange" : "green"}
+                color={currentFilter === "Kokkekursteltet" ? "pink" : "cherry"}
                 size="small"
                 isArrow={false}
                 onClick={() => {
@@ -135,7 +135,7 @@ const EventMainPage: NextPage<Props> = ({ page = {} }) => {
                 Kokkekurs
               </Button>
               <Button
-                color={currentFilter === "Foredragsteltet" ? "orange" : "green"}
+                color={currentFilter === "Foredragsteltet" ? "pink" : "cherry"}
                 size="small"
                 isArrow={false}
                 onClick={() => {
@@ -145,7 +145,7 @@ const EventMainPage: NextPage<Props> = ({ page = {} }) => {
                 Foredrag
               </Button>
               <Button
-                color={currentFilter === "Barneteltet" ? "orange" : "green"}
+                color={currentFilter === "Barneteltet" ? "pink" : "cherry"}
                 size="small"
                 isArrow={false}
                 onClick={() => {
@@ -155,7 +155,7 @@ const EventMainPage: NextPage<Props> = ({ page = {} }) => {
                 For barn
               </Button>
               <Button
-                color={currentFilter === "Hangout" ? "orange" : "green"}
+                color={currentFilter === "Hangout" ? "pink" : "cherry"}
                 size="small"
                 isArrow={false}
                 onClick={() => {

@@ -22,7 +22,7 @@ export const Footer = () => {
           <Flow>
             <Grid>
               <Flow space="small">
-                <h2 className="font-strike">Om Oslo Vegetarfestival</h2>
+                <h2 className="font-strike">Om julemarkedet</h2>
                 <p>
                   Opplev det beste fra planteriket! Vi er en inspirerende og
                   idyllisk matfestival som brenner for plantebasert mat.{" "}
@@ -31,7 +31,6 @@ export const Footer = () => {
                   </Link>
                 </p>
                 <Button
-                  color="orange"
                   link="https://tikkio.com/tickets/30345-oslo-vegetarfestival-2023"
                   isOpenInNewWindow
                 >

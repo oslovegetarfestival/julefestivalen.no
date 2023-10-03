@@ -118,7 +118,7 @@ export const Header = ({ isFrontpage }: Props) => {
                 data-animation-order="7"
               >
                 <Button
-                  color="orange"
+                  color="pink"
                   size="small"
                   link="https://tikkio.com/tickets/30345-oslo-vegetarfestival-2023"
                   isOpenInNewWindow
@@ -132,7 +132,6 @@ export const Header = ({ isFrontpage }: Props) => {
           <div className={styles.mobileToggle}>
             <Button
               size="medium"
-              color="green"
               isArrow={false}
               onClick={() => {
                 setIsMobileMenuOpen(!isMobileMenuOpen)

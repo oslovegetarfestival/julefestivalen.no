@@ -1,7 +1,7 @@
 // Globals
 body {
   background: var(--color-almondmilk);
-  color: var(--color-kale);
+  color: var(--color-cherry);
   min-width: 320px;
   vertical-align: baseline;
   position: relative;
@@ -23,7 +23,8 @@ a {
 .link {
   border-bottom: 2px solid var(--color-kale);
   cursor: pointer;
-  background: linear-gradient(0deg, var(--color-kale), var(--color-kale)) no-repeat right bottom / 0 2px;
+  background: linear-gradient(0deg, var(--color-kale), var(--color-kale))
+    no-repeat right bottom / 0 2px;
   transition: background-size 350ms;
   font-weight: 500;
 
@@ -35,7 +36,12 @@ a {
 
   &--white {
     border-bottom: 2px solid var(--color-almondmilk);
-    background: linear-gradient(0deg, var(--color-almondmilk), var(--color-almondmilk)) no-repeat right bottom / 0 2px;    
+    background: linear-gradient(
+        0deg,
+        var(--color-almondmilk),
+        var(--color-almondmilk)
+      )
+      no-repeat right bottom / 0 2px;
   }
 }
 
