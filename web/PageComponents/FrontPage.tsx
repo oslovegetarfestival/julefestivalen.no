@@ -26,7 +26,7 @@ const FrontPage: NextPage<Props> = ({ page = {} }) => {
         style={{ paddingTop: "40px" }}
       >
         <Section width="large" noPadding="sides">
-          <h2>Nytt fra festivalen</h2>
+          <h2>Nytt fra julemarkedet</h2>
 
           <Block top="7" bottom="5">
             <Card data={page?.promotedNews} isEagerLoadImages />
@@ -40,7 +40,7 @@ const FrontPage: NextPage<Props> = ({ page = {} }) => {
 
       <Section centerContent width="full" verticalPadding="xlarge">
         <Section width="large" noPadding="sides">
-          <h2>Dette skjer på festivalen</h2>
+          <h2>Dette skjer på julemarkedet</h2>
 
           <Block top="7" bottom="5">
             <Card data={page?.promotedEvents} type="eventWithDate" />
@@ -57,7 +57,7 @@ const FrontPage: NextPage<Props> = ({ page = {} }) => {
         background="lychee"
       >
         <Section width="large" noPadding="sides">
-          <h2>Årets utstillere</h2>
+          <h2>Noen av årets utstillere</h2>
 
           <Block top="7" bottom="5">
             <Card data={page?.promotedExhibitors} />

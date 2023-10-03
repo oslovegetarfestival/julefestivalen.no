@@ -27,7 +27,7 @@ export const Footer = () => {
                   Opplev det beste fra planteriket! Vi er en inspirerende og
                   idyllisk matfestival som brenner for plantebasert mat.{" "}
                   <Link href="/om-oss" className="link link--white">
-                    Mer om festivalen
+                    Mer om julemarkedet
                   </Link>
                 </p>
                 <Button
