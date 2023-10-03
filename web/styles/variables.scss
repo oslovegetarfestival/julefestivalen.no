@@ -3,8 +3,7 @@
 
 // Global variables
 :root {
-
-   // Colors
+  // Colors
   --color-oatmilk: #ffffea;
   --color-soymilk: #ffffdc;
   --color-almondmilk: #fff3e0;
@@ -25,8 +24,7 @@
   --color-aubergine: #d7bbf8;
   --color-cherry: #851f4a;
   --color-potato: #b28f45;
-
-
+  --color-raspberry: #de1545;
 
   // Spacing
   --spacing-1: 4px;
@@ -61,7 +59,7 @@
 
   --grid-gutter: var(--spacing-7);
   @media (max-width: $breakpoint-tablet) {
-  --grid-gutter: var(--spacing-6);
+    --grid-gutter: var(--spacing-6);
   }
 
   // Animations

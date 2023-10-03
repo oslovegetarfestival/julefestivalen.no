@@ -42,7 +42,7 @@ const FrontPage: NextPage<Props> = ({ page = {} }) => {
         centerContent
         width="full"
         verticalPadding="xlarge"
-        background="lychee"
+        background="cherry"
       >
         <Section width="large" noPadding="sides">
           <h2>Dette skjer på julemarkedet</h2>
@@ -51,7 +51,9 @@ const FrontPage: NextPage<Props> = ({ page = {} }) => {
             <Card data={page?.promotedEvents} type="eventWithDate" />
           </Block>
 
-          <Button link="/program">Se hele programmet</Button>
+          <Button link="/program" color="white">
+            Se hele programmet
+          </Button>
         </Section>
       </Section>
 

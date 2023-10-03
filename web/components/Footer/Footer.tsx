@@ -31,6 +31,7 @@ export const Footer = () => {
                   </Link>
                 </p>
                 <Button
+                  color="white"
                   link="https://tikkio.com/tickets/30345-oslo-vegetarfestival-2023"
                   isOpenInNewWindow
                 >

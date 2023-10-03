@@ -59,12 +59,11 @@
 
 .color--white {
   background-color: var(--color-almondmilk);
-  color: var(--color-kale);
+  color: var(--color-cherry);
 
   &:hover,
   &:focus {
-    color: var(--color-almondmilk);
-    background-color: var(--color-cucumber);
+    filter: brightness(105%);
   }
 }
 

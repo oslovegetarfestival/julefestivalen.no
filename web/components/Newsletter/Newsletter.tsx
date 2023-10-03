@@ -4,7 +4,12 @@ import { Button } from "components/Button"
 
 export const Newsletter = () => {
   return (
-    <Button link="https://zcmp.eu/sZa" size="small" isOpenInNewWindow>
+    <Button
+      link="https://zcmp.eu/sZa"
+      size="small"
+      isOpenInNewWindow
+      color="white"
+    >
       Meld deg på nyhetsbrevet
     </Button>
     // <form>

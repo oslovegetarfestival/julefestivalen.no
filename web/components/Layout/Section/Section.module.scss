@@ -18,7 +18,7 @@
 
 .-medium {
   max-width: var(--page-width-medium);
-  }
+}
 
 .-small {
   max-width: var(--page-width-small);
@@ -60,7 +60,11 @@
   }
   &-kale {
     background-color: var(--color-kale);
-    color: var(--color-almondmilk)
+    color: var(--color-almondmilk);
+  }
+  &-cherry {
+    background-color: var(--color-cherry);
+    color: var(--color-almondmilk);
   }
 }
 
@@ -71,11 +75,11 @@
 
 .-no-padding {
   &-top {
-    padding-top: 0
+    padding-top: 0;
   }
 
   &-bottom {
-    padding-bottom: 0
+    padding-bottom: 0;
   }
 
   &-sides {
