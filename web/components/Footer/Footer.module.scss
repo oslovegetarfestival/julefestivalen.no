@@ -1,10 +1,10 @@
 .footer {
-  background-color: var(--color-kale);
+  background-color: var(--color-cherry);
   color: var(--color-almondmilk);
 }
 
 .logo {
-  line-height: .9;
+  line-height: 0.9;
   span {
     display: block;
   }
@@ -15,7 +15,7 @@
 
 .menuItem {
   margin-right: 2rem;
-  font-family: 'Strike';
+  font-family: "Strike";
 
   &:last-child {
     margin-right: 0;
@@ -29,7 +29,7 @@
   text-transform: none;
   letter-spacing: normal;
   border-radius: var(--border-radius);
-  transition: background-color .3s ease;
+  transition: background-color 0.3s ease;
   clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
   &:hover {
     background-color: var(--color-aubergine);
