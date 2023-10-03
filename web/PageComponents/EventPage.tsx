@@ -63,11 +63,11 @@ const EventPage: NextPage<Props> = ({ page = {} }) => {
         startDate={currentEvent?.startDateTime}
         endDate={currentEvent?.endDateTime}
         location={{
-          name: "Kubaparken, Oslo",
+          name: "DOGA, Oslo",
           address: {
-            streetAddress: "Maridalsveien 20",
+            streetAddress: "Hausmanns gate 16",
             addressRegion: "Oslo",
-            postalCode: "0178",
+            postalCode: "0182",
             addressCountry: "NO",
           },
         }}
@@ -79,10 +79,10 @@ const EventPage: NextPage<Props> = ({ page = {} }) => {
         organizer={{
           type: "Organization",
           name: "Oslo Vegetarfestival",
-          url: "https://www.oslovegetarfestival.no",
+          url: "https://www.julefestivalen.no",
         }}
         offers={{
-          url: "https://www.oslovegetarfestival.no/billett",
+          url: "https://www.julefestivalen.no/billett",
           availability: "https://schema.org/InStock",
         }}
         eventStatus="EventScheduled"

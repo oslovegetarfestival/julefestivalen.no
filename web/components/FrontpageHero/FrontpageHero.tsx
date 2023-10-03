@@ -20,7 +20,7 @@ export const FrontpageHero = () => {
           <span>fest i</span>
           <span>🐳en</span>
           <Block top="5">
-            <span className={styles.date}>Kubaparken</span>
+            <span className={styles.date}>DOGA</span>
             <span className={styles.date}>9.-10. desember 2023</span>
           </Block>
         </div>
