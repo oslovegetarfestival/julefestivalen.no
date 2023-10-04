@@ -32,7 +32,7 @@ export const Footer = () => {
                 </p>
                 <Button
                   color="white"
-                  link="https://tikkio.com/tickets/30345-oslo-vegetarfestival-2023"
+                  link="https://tikkio.com/tickets/41042-oslo-vegetarfestivals-julemarked-2023"
                   isOpenInNewWindow
                 >
                   Kjøp billett
