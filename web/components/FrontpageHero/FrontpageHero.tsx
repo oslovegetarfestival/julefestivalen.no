@@ -7,22 +7,23 @@ import { AnimationHeaderMobile } from "components/AnimationHeaderMobile"
 export const FrontpageHero = () => {
   return (
     <div style={{ position: "relative", overflow: "hidden" }}>
-      <div className={styles.heroImage}>
+      {/* <div className={styles.heroImage}>
         <AnimationHeader />
       </div>
       <div className={styles.heroImageMobile}>
         <AnimationHeaderMobile />
-      </div>
+      </div> */}
 
-      <Section width="large" verticalPadding="large" noPadding="top">
+      <Section
+        width="large"
+        verticalPadding="large"
+        noPadding="top"
+        centerContent
+      >
         <div className={styles.logo}>
-          <span>Jule</span>
-          <span>fest i</span>
-          <span>🐳en</span>
-          <Block top="5">
-            <span className={styles.date}>DOGA</span>
-            <span className={styles.date}>9.-10. desember 2023</span>
-          </Block>
+          <span>Julemarked</span>
+          <span className={styles.date}>9.-10. desember</span>
+          <span>på DOGA i Oslo</span>
         </div>
 
         <Block top="7">
