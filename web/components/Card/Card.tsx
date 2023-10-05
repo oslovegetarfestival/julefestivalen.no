@@ -6,6 +6,7 @@ import styles from "./Card.module.scss"
 import { fullDate, startAndEndTime } from "utils/date"
 import { weekDayAndStartEndTime } from "utils/date"
 import { SanityImageWrap } from "components/SanityImageWrap"
+import classNames from "classnames"
 
 type Item = {
   image: {
@@ -36,6 +37,7 @@ type Props = {
   data: Item[]
   type?: TypeProps
   isEagerLoadImages?: boolean
+  color?: "lavender"
 }
 
 type EventDateProps = {
@@ -69,7 +71,17 @@ const createEventDate = ({ type, item }: EventDateProps) => {
   return ""
 }
 
-export const Card = ({ data, type, isEagerLoadImages = false }: Props) => {
+export const Card = ({
+  data,
+  type,
+  isEagerLoadImages = false,
+  color,
+}: Props) => {
+  const metadataClass = classNames({
+    [styles.metadata]: true,
+    [styles[`metadata-color-${color}`]]: color,
+  })
+
   return (
     <div className={styles.grid}>
       {data?.map((item) => (
@@ -83,7 +95,7 @@ export const Card = ({ data, type, isEagerLoadImages = false }: Props) => {
               loading={isEagerLoadImages ? "eager" : "lazy"}
             />
             <div className={styles.content}>
-              <p className={styles.metadata}>
+              <p className={metadataClass}>
                 {createEventDate({ type: type, item: item })}
               </p>
               <Flow space="xsmall">

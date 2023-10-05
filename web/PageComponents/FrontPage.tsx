@@ -4,7 +4,6 @@ import { FrontpageHero } from "components/FrontpageHero"
 import { Block, Flex, Section } from "components/Layout"
 import { Button } from "components/Button"
 import { Card } from "components/Card"
-import { BackgroundVideo } from "components/BackgroundVideo"
 import { Seo } from "components/Seo"
 import { SponsorBlock } from "components/SponsorBlock"
 
@@ -36,8 +35,6 @@ const FrontPage: NextPage<Props> = ({ page = {} }) => {
         </Section>
       </Section>
 
-      {/* <BackgroundVideo /> */}
-
       <Section
         centerContent
         width="full"
@@ -48,7 +45,11 @@ const FrontPage: NextPage<Props> = ({ page = {} }) => {
           <h2>Dette skjer på julemarkedet</h2>
 
           <Block top="7" bottom="5">
-            <Card data={page?.promotedEvents} type="eventWithDate" />
+            <Card
+              data={page?.promotedEvents}
+              type="eventWithDate"
+              color="lavender"
+            />
           </Block>
 
           <Button link="/program" color="white">

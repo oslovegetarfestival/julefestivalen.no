@@ -57,9 +57,14 @@
 }
 
 .metadata {
-  color: var(--color-lavender);
+  // color: var(--color-lavender);
+  color: var(--color-raspberry);
   text-transform: uppercase;
   font-size: 80%;
   font-weight: 500;
   margin-bottom: var(--spacing-1);
+
+  &-color-lavender {
+    color: var(--color-lavender);
+  }
 }
