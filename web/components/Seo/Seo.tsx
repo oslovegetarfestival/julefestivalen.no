@@ -33,7 +33,7 @@ export const Seo = ({ page, isFrontPage, ...rest }: SeoProps) => {
   const description =
     page?.seo?.description ||
     page?.intro ||
-    "Velkommen til Oslo Vegetarfestival 25.-26. mai 2024"
+    "Velkommen til Oslo Vegetarfestivals julemarked 9.-10. desember 2023"
 
   // Ordinary main image
   const mainImage =

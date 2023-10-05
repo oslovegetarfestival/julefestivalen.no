@@ -57,10 +57,8 @@ export const Header = ({ isFrontpage }: Props) => {
           {(!isFrontpage || isMobileMenuOpen) && (
             <p className="h1">
               <Link href="/" className={logoClass} title="Til forsiden">
-                <span>Oslo</span>
-                <span>Vegetar</span>
-                <span>festival</span>
-                <span className={styles.date}>25.-26. mai 2024</span>
+                <span>Julemarked</span>
+                <span className={styles.date}>9.-10. desember 2023</span>
               </Link>
             </p>
           )}

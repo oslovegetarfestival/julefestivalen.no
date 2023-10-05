@@ -11,16 +11,15 @@ $breakpoint: 1250px;
   &:hover {
     text-decoration: none;
   }
-  
+
   &-mobile-menu-open {
     position: fixed;
   }
 }
 
-
 .date {
   font-size: 1.25rem;
-  margin-top: var(--spacing-4);
+  margin-top: var(--spacing-2);
 }
 
 @keyframes animate-clouds {
