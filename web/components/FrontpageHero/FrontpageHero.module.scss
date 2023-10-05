@@ -1,42 +1,6 @@
-.heroImage {
-  position: absolute;
-  right: var(--spacing-7);
-  z-index: -1;
-  height: 100%;
-  max-width: none;
-
-  @media (max-width: 1250px) {
-    right: auto;
-    left: 30%;
-  }
-
-  @media (max-width: 750px) {
-    left: 50%;
-  }
-
-  @media (max-width: 500px) {
-    display: none;
-  }
-}
-
-.heroImageMobile {
-  display: none;
-
-  @media (max-width: 499px) {
-    max-width: 320px;
-    display: block;
-    position: absolute;
-    z-index: -1;
-    height: 100%;
-    top: 30px;
-    left: 50%;
-    height: 320px;
-  }
-}
-
 .logo {
-  line-height: 1;
-  font-size: 5rem;
+  line-height: 1.1;
+  font-size: 4.5rem;
   font-family: "Strike";
 
   @media (max-width: 900px) {

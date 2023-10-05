@@ -39,7 +39,7 @@ export const Header = ({ isFrontpage }: Props) => {
 
   return (
     <header>
-      <Section width="xlarge" verticalPadding="small">
+      <Section width="large" verticalPadding="small">
         {/* {!isFrontpage && (
           <img
             src="/logo-candy.svg"
@@ -50,16 +50,21 @@ export const Header = ({ isFrontpage }: Props) => {
           />
         )} */}
 
-        <Flex
-          justify={isFrontpage && !isMobileMenuOpen ? "end" : "spaceBetween"}
-          align="start"
-        >
+        <Flex justify="spaceBetween" align="start">
           {(!isFrontpage || isMobileMenuOpen) && (
             <p className="h1">
               <Link href="/" className={logoClass} title="Til forsiden">
                 <span>Julemarked</span>
                 <span className={styles.date}>9.-10. desember 2023</span>
               </Link>
+            </p>
+          )}
+
+          {isFrontpage && (
+            <p className={styles.mainLogo}>
+              <span>Oslo</span>
+              <span>Vegetar</span>
+              <span>festival</span>
             </p>
           )}
 

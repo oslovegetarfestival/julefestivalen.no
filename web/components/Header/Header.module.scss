@@ -17,6 +17,17 @@ $breakpoint: 1250px;
   }
 }
 
+.mainLogo {
+  font-family: "Strike";
+  line-height: 0.9;
+  font-size: 2rem;
+  position: relative;
+
+  span {
+    display: block;
+  }
+}
+
 .date {
   font-size: 1.25rem;
   margin-top: var(--spacing-2);
