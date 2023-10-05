@@ -57,6 +57,12 @@ const groupEventByDate = (data: EventItem[]) => {
 const EventMainPage: NextPage<Props> = ({ page = {} }) => {
   const groupedData = groupEventByDate(page?.items)
 
+  // Create a list of all unique locations
+  const uniqueLocations = page?.items
+    ?.map((item) => item?.location?.title)
+    ?.filter((value, index, array) => array.indexOf(value) === index)
+    ?.sort()
+
   const [currentFilter, setCurrentFilter] = useState("")
 
   const handleFilterClick = (filter: string) => {
@@ -124,46 +130,20 @@ const EventMainPage: NextPage<Props> = ({ page = {} }) => {
               >
                 Vis alt
               </Button>
-              <Button
-                color={currentFilter === "Kokkekursteltet" ? "pink" : "cherry"}
-                size="small"
-                isArrow={false}
-                onClick={() => {
-                  handleFilterClick("Kokkekursteltet")
-                }}
-              >
-                Kokkekurs
-              </Button>
-              <Button
-                color={currentFilter === "Foredragsteltet" ? "pink" : "cherry"}
-                size="small"
-                isArrow={false}
-                onClick={() => {
-                  handleFilterClick("Foredragsteltet")
-                }}
-              >
-                Foredrag
-              </Button>
-              <Button
-                color={currentFilter === "Barneteltet" ? "pink" : "cherry"}
-                size="small"
-                isArrow={false}
-                onClick={() => {
-                  handleFilterClick("Barneteltet")
-                }}
-              >
-                For barn
-              </Button>
-              <Button
-                color={currentFilter === "Hangout" ? "pink" : "cherry"}
-                size="small"
-                isArrow={false}
-                onClick={() => {
-                  handleFilterClick("Hangout")
-                }}
-              >
-                Hangout
-              </Button>
+
+              {uniqueLocations?.map((location: string) => (
+                <Button
+                  key={location}
+                  color={currentFilter === location ? "pink" : "cherry"}
+                  size="small"
+                  isArrow={false}
+                  onClick={() => {
+                    handleFilterClick(location)
+                  }}
+                >
+                  {location}
+                </Button>
+              ))}
             </Flex>
           </div>
         </Flex>
