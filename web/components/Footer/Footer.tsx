@@ -13,6 +13,7 @@ export const Footer = () => {
       <div className={styles.illustrations}>
         <AnimationFooter />
       </div>
+      <div className={styles.uneven} />
       <footer className={styles.footer}>
         <Section width="xlarge">
           <Section centerContent>
