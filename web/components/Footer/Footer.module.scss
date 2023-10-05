@@ -1,6 +1,35 @@
+.illustrations {
+  margin-bottom: -118px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 600px) {
+    margin-bottom: -60px;
+  }
+
+  @media (max-width: 400px) {
+    margin-bottom: -50px;
+  }
+
+  > svg {
+    max-width: none;
+    flex-shrink: 0.5;
+
+    @media (max-width: 600px) {
+      flex-shrink: 0.8;
+    }
+  }
+}
+
 .footer {
   background-color: var(--color-cherry);
   color: var(--color-almondmilk);
+  padding-top: 100px;
+
+  @media (max-width: 600px) {
+    padding-top: 40px;
+  }
 }
 
 .logo {
