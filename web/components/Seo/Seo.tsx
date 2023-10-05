@@ -52,14 +52,17 @@ export const Seo = ({ page, isFrontPage, ...rest }: SeoProps) => {
   const images = []
 
   if (mainImage != null) {
+    //@ts-ignore
     images.push({ url: mainImage })
   }
 
   if (seoImage != null) {
+    //@ts-ignore
     images.push({ url: seoImage })
   }
 
   if (images.length < 1) {
+    //@ts-ignore
     images.push({ url: defaultImage })
   }
 

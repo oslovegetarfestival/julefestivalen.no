@@ -9,7 +9,7 @@ type Props = {
 export const PageLayout = ({ children }: Props) => {
   const router = useRouter()
 
-  //@ts-expect-error
+  //@ts-ignore
   const isFrontpage = children?.[0]?.props?.page?._type === "frontPage"
 
   return (
