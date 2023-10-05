@@ -4,7 +4,7 @@ import { HTMLProps } from "react"
 import styles from "./Section.module.scss"
 
 type Props = {
-  width?: "full" | "large" | "medium" | "small"
+  width?: "full" | "xlarge" | "large" | "medium" | "small"
   verticalPadding?: "xlarge" | "large" | "medium" | "small" | "tiny"
   noPadding?: "top" | "bottom" | "sides"
   children: React.ReactNode

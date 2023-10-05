@@ -39,8 +39,8 @@ export const Header = ({ isFrontpage }: Props) => {
 
   return (
     <header>
-      <Section width="full" verticalPadding="small">
-        {!isFrontpage && (
+      <Section width="xlarge" verticalPadding="small">
+        {/* {!isFrontpage && (
           <img
             src="/logo-candy.svg"
             alt=""
@@ -48,7 +48,7 @@ export const Header = ({ isFrontpage }: Props) => {
             aria-hidden
             loading="eager"
           />
-        )}
+        )} */}
 
         <Flex
           justify={isFrontpage && !isMobileMenuOpen ? "end" : "spaceBetween"}

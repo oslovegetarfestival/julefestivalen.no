@@ -12,6 +12,10 @@
   width: 100%;
 }
 
+.-xlarge {
+  max-width: var(--page-width-xlarge);
+}
+
 .-large {
   max-width: var(--page-width-large);
 }

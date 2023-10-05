@@ -14,7 +14,7 @@ export const Footer = () => {
         <AnimationFooter />
       </div>
       <footer className={styles.footer}>
-        <Section width="large">
+        <Section width="xlarge">
           <Section centerContent>
             <a href="#">Til toppen ↑</a>
           </Section>
