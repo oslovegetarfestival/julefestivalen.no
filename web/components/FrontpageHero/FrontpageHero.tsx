@@ -22,8 +22,8 @@ export const FrontpageHero = () => {
       >
         <div className={styles.logo}>
           <span>Julemarked</span>
-          <span className={styles.date}>9.-10. desember</span>
           <span>på DOGA i Oslo</span>
+          <span className={styles.date}>9.-10. desember</span>
         </div>
 
         <Block top="7">
