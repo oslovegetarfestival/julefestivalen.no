@@ -1,5 +1,5 @@
 .wrap {
-  background: var(--color-orange);
+  background: var(--color-lavender);
   border-radius: var(--border-radius);
   overflow: hidden; // Make rounded edges on bottom work when open
 }
@@ -8,12 +8,12 @@
   list-style: none;
   display: block;
   cursor: pointer;
-  position: relative;  
+  position: relative;
   padding: var(--spacing-5);
 
   &::-webkit-details-marker {
     display: none;
-  }  
+  }
 }
 
 .icon {
@@ -25,21 +25,20 @@
 
 .details {
   transition: var(--transition-quick);
-  border-bottom: 1px solid var(--color-kale);
-  
+  border-bottom: 1px solid var(--color-cherry);
+
   &:last-of-type {
     border-color: transparent;
   }
 }
 
 .details[open] {
-  background: var(--color-banana);
+  background: var(--color-peach);
 
   & .icon {
     transform: rotate(0deg);
   }
 }
-
 
 .content {
   margin: 0 var(--spacing-5) var(--spacing-6);
