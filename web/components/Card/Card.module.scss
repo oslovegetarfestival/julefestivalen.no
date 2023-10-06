@@ -4,16 +4,15 @@
   padding: 0 var(--page-gutter);
   grid-gap: var(--grid-gutter);
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
 
   @media (max-width: 890px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   @media (max-width: 500px) {
-    scroll-snap-type: x mandatory;
-    scroll-snap-align: start end;
-    grid-template-columns: repeat(4, minmax(88%, 1fr));
-    overflow-x: auto;
+    grid-template-columns: repeat(4, minmax(85%, 1fr));
   }
 
   &::-webkit-scrollbar {
@@ -28,14 +27,11 @@
   &:hover {
     transform: translateY(-6px);
   }
-
-  @media (max-width: 500px) {
-    overflow-x: scroll;
-  }
 }
 
 .link {
   cursor: pointer;
+  scroll-snap-align: center;
 
   &:hover {
     text-decoration: none;
