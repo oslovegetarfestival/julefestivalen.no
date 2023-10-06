@@ -38,6 +38,7 @@ type Props = {
   type?: TypeProps
   isEagerLoadImages?: boolean
   color?: "lavender"
+  isScroll?: boolean
 }
 
 type EventDateProps = {
@@ -76,14 +77,20 @@ export const Card = ({
   type,
   isEagerLoadImages = false,
   color,
+  isScroll,
 }: Props) => {
+  const gridClass = classNames({
+    [styles.grid]: true,
+    [styles[`grid-isScroll`]]: isScroll,
+  })
+
   const metadataClass = classNames({
     [styles.metadata]: true,
     [styles[`metadata-color-${color}`]]: color,
   })
 
   return (
-    <div className={styles.grid}>
+    <div className={gridClass}>
       {data?.map((item) => (
         <Link key={item._id} href={item.slug?.current} className={styles.link}>
           <div className={styles.wrap}>

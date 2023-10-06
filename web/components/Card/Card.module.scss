@@ -4,19 +4,26 @@
   padding: 0 var(--page-gutter);
   grid-gap: var(--grid-gutter);
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
 
   @media (max-width: 890px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   @media (max-width: 500px) {
-    grid-template-columns: repeat(4, minmax(85%, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  &-isScroll {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    @media (max-width: 500px) {
+      grid-template-columns: repeat(4, minmax(85%, 1fr));
+    }
   }
 }
 
