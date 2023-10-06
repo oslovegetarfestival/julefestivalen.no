@@ -1,3 +1,19 @@
+.wrapLeft {
+  position: absolute;
+  right: calc(50% + 480px);
+  transform: translateX(50%);
+  z-index: -1;
+  width: 570px;
+  top: 40px;
+}
+
+.wrapRight {
+  position: absolute;
+  right: calc(50% - 480px);
+  transform: translateX(50%);
+  z-index: -1;
+}
+
 .animation {
   display: block;
   height: 100%;
@@ -5,18 +21,38 @@
   overflow: visible;
 }
 
-.cloud1 { animation: slide 5s infinite ease alternate; }
-.cloud2 { animation: slide 5s infinite ease alternate; }
-.cloud3 { animation: slide-wide 6s infinite ease alternate; }
-.cloud4 { animation: slide 6s infinite ease alternate; }
-.cloud5 { animation: slide-wide 7s infinite ease alternate; }
+.cloud1 {
+  animation: slide 5s infinite ease alternate;
+}
+.cloud2 {
+  animation: slide 5s infinite ease alternate;
+}
+.cloud3 {
+  animation: slide-wide 6s infinite ease alternate;
+}
+.cloud4 {
+  animation: slide 6s infinite ease alternate;
+}
+.cloud5 {
+  animation: slide-wide 7s infinite ease alternate;
+}
 
-.cloud6 { animation: slide-narrow 6s infinite ease alternate; }
-.cloud7 { animation: slide-narrow 7s infinite ease alternate-reverse; }
+.cloud6 {
+  animation: slide-narrow 6s infinite ease alternate;
+}
+.cloud7 {
+  animation: slide-narrow 7s infinite ease alternate-reverse;
+}
 
-.butterfly1 { animation: up-down 6s infinite ease alternate-reverse; }
-.butterfly2 { animation: up-down 6s infinite ease alternate; }
-.bird { animation: up-down 5s infinite ease alternate-reverse; }
+.butterfly1 {
+  animation: up-down 6s infinite ease alternate-reverse;
+}
+.butterfly2 {
+  animation: up-down 6s infinite ease alternate;
+}
+.bird {
+  animation: up-down 5s infinite ease alternate-reverse;
+}
 
 .mushroom1 {
   animation: sway 4s infinite ease alternate;
@@ -30,7 +66,6 @@
   animation: tilt 4s infinite ease alternate-reverse;
   transform-origin: 72% 30%;
 }
-
 
 @keyframes up-down {
   0%,

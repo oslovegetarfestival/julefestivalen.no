@@ -9,17 +9,19 @@ export const FrontpageHero = () => {
     <div style={{ position: "relative", overflow: "hidden" }}>
       {/* <div className={styles.heroImage}>
         <AnimationHeader />
-      </div>
-      <div className={styles.heroImageMobile}>
+      </div> */}
+      {/* <div className={styles.heroImageMobile}>
         <AnimationHeaderMobile />
       </div> */}
 
       <Section
-        width="large"
+        width="full"
         verticalPadding="large"
         noPadding="top"
         centerContent
       >
+        <AnimationHeader />
+
         <div className={styles.logo}>
           <span>Julemarked</span>
           <span>på DOGA i Oslo</span>
