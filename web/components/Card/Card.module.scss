@@ -1,17 +1,19 @@
 .grid {
   display: grid;
-  grid-gap: var(--grid-gutter);
+  margin: 0 calc(var(--page-gutter) * -1);
+  padding: 0 var(--page-gutter);
   grid-gap: var(--grid-gutter);
   grid-template-columns: repeat(4, minmax(0, 1fr));
 
-  @media (max-width: 1200px) {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
   @media (max-width: 890px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
   @media (max-width: 500px) {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: start end;
+    grid-template-columns: repeat(4, minmax(88%, 1fr));
+    overflow-x: auto;
   }
 }
 
@@ -21,6 +23,10 @@
 
   &:hover {
     transform: translateY(-6px);
+  }
+
+  @media (max-width: 500px) {
+    overflow-x: scroll;
   }
 }
 
