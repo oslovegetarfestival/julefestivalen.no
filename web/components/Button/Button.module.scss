@@ -7,6 +7,7 @@
   transition: all 0.3s ease;
   clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
   cursor: pointer;
+  text-wrap: balance;
 
   &:hover {
     text-decoration: none;
@@ -95,6 +96,11 @@
 .size--medium {
   padding: var(--spacing-1) var(--spacing-5);
   font-size: 1.4rem;
+
+  @media (max-width: 500px) {
+    padding: var(--spacing-1) var(--spacing-4);
+    font-size: 1.2rem;
+  }
 }
 
 .size--large {
