@@ -24,47 +24,50 @@
 .cloud1 {
   animation: slide 5s infinite ease alternate;
 }
-.cloud2 {
-  animation: slide 5s infinite ease alternate;
-}
-.cloud3 {
-  animation: slide-wide 6s infinite ease alternate;
-}
-.cloud4 {
-  animation: slide 6s infinite ease alternate;
-}
-.cloud5 {
-  animation: slide-wide 7s infinite ease alternate;
-}
 
-.cloud6 {
-  animation: slide-narrow 6s infinite ease alternate;
-}
-.cloud7 {
+.cloud2 {
   animation: slide-narrow 7s infinite ease alternate-reverse;
 }
 
-.butterfly1 {
-  animation: up-down 6s infinite ease alternate-reverse;
-}
-.butterfly2 {
-  animation: up-down 6s infinite ease alternate;
-}
-.bird {
-  animation: up-down 5s infinite ease alternate-reverse;
+.cloud3 {
+  animation: slide-narrow 5s infinite ease alternate;
 }
 
-.mushroom1 {
+.moon {
+  animation: up-down 9s infinite ease alternate-reverse;
+}
+
+.sway {
   animation: sway 4s infinite ease alternate;
-  transform-origin: 80% 60%;
+  transform-origin: center bottom;
 }
-.mushroom2 {
-  animation: sway 4s infinite ease alternate-reverse;
-  transform-origin: 70% 60%;
+
+.wind {
+  animation: wind 3s infinite ease alternate;
+  transform-origin: center bottom;
 }
-.mushroom2cap {
-  animation: tilt 4s infinite ease alternate-reverse;
-  transform-origin: 72% 30%;
+
+.tilt {
+  animation: wind 7s infinite ease alternate;
+  transform-origin: center bottom;
+}
+
+.rotate {
+  animation: rotate 4s infinite ease alternate;
+  transform-origin: center;
+}
+
+.slide {
+  animation: slide 8s infinite ease alternate;
+  transform-origin: center;
+}
+
+.blink {
+  animation: blink 10s infinite ease alternate;
+}
+
+.blink2 {
+  animation: blink 10s infinite ease;
 }
 
 @keyframes up-down {
@@ -113,11 +116,71 @@
   }
 }
 
-@keyframes slide-wide {
+@keyframes rotate {
   0% {
-    transform: translateX(40px);
+    transform: rotate(-2deg);
   }
   100% {
-    transform: translateX(-40px);
+    transform: rotate(4deg);
+  }
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes wind {
+  0% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(-4deg);
+  }
+  100% {
+    transform: rotate(4deg);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  82% {
+    opacity: 0;
+  }
+  84% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
