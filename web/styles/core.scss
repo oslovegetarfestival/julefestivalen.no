@@ -91,6 +91,11 @@ svg {
   height: auto;
 }
 
+// Make transform-origin behave like html elements
+svg * {
+  transform-box: fill-box;
+}
+
 // Date and location
 .meta-details {
   text-align: center;
