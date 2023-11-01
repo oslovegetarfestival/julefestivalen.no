@@ -107,7 +107,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           t.src=v;s=b.getElementsByTagName(e)[0];
           s.parentNode.insertBefore(t,s)}(window, document,'script',
           'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '478499720966332');
+          fbq('init', '1919139591779834');
           fbq('track', 'PageView');
           `,
         }}
