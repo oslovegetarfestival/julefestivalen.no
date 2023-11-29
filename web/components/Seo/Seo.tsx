@@ -24,7 +24,7 @@ type SeoProps = {
   isFrontPage?: boolean
 }
 
-const SITE_NAME = "Oslo Vegetarfestival"
+const SITE_NAME = "Julemarked"
 
 export const Seo = ({ page, isFrontPage, ...rest }: SeoProps) => {
   const title = page?.seo?.title || page?.title || SITE_NAME
@@ -48,7 +48,7 @@ export const Seo = ({ page, isFrontPage, ...rest }: SeoProps) => {
   // Default image
   // TODO: Find a better default image
   const defaultImage =
-    "https://oslovegetarfestival.no/logo-default-some.png?v=1"
+    "https://julefestivalen.no/logo-default-some.png?v=2"
 
   const images = []
 
@@ -68,7 +68,7 @@ export const Seo = ({ page, isFrontPage, ...rest }: SeoProps) => {
   }
 
   // Canonical url
-  const canonicalUrl = `https://www.oslovegetarfestival.no${
+  const canonicalUrl = `https://www.julefestivalen.no${
     page?.slug?.current ? page.slug.current : ""
   }`
 

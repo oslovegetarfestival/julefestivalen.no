@@ -1,6 +1,6 @@
 {
-  "name": "oslovegetarfestival.no",
-  "description": "Sanity + Next.js frontend for Oslo Vegetarfestival",
+  "name": "julefestivalen.no",
+  "description": "Sanity + Next.js frontend for Oslo Vegetarfestivals julefestival",
   "scripts": {
     "dev": "(cd studio && npm run dev) & (cd web && npm run dev)"
   }
