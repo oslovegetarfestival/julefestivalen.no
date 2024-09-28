@@ -55,7 +55,7 @@ export const Header = ({ isFrontpage }: Props) => {
             <p className="h1">
               <Link href="/" className={logoClass} title="Til forsiden">
                 <span>Julemarked</span>
-                <span className={styles.date}>9.-10. desember 2023</span>
+                {/* <span className={styles.date}>9.-10. desember 2023</span> */}
               </Link>
             </p>
           )}

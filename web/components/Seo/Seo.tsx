@@ -33,7 +33,7 @@ export const Seo = ({ page, isFrontPage, ...rest }: SeoProps) => {
   const description =
     page?.seo?.description ||
     page?.intro ||
-    "Velkommen til Oslo Vegetarfestivals julemarked 9.-10. desember 2023"
+    "Velkommen til Oslo Vegetarfestivals julemarked i Oslo"
 
   // Ordinary main image
   const mainImage =
@@ -47,8 +47,7 @@ export const Seo = ({ page, isFrontPage, ...rest }: SeoProps) => {
 
   // Default image
   // TODO: Find a better default image
-  const defaultImage =
-    "https://julefestivalen.no/logo-default-some.png?v=2"
+  const defaultImage = "https://julefestivalen.no/logo-default-some.png?v=2"
 
   const images = []
 

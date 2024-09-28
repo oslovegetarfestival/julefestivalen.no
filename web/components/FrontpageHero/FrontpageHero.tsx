@@ -23,9 +23,8 @@ export const FrontpageHero = () => {
         <AnimationHeader />
 
         <div className={styles.logo}>
-          <span>Julemarked</span>
-          <span>på DOGA i Oslo</span>
-          <span className={styles.date}>9.-10. desember</span>
+          <span>Plantebasert</span>
+          <span>julemarked i Oslo</span>
         </div>
 
         <Block top="7">
