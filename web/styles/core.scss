@@ -23,8 +23,7 @@ a {
 .link {
   border-bottom: 2px solid var(--color-cherry);
   cursor: pointer;
-  background: linear-gradient(0deg, var(--color-cherry), var(--color-cherry))
-    no-repeat right bottom / 0 2px;
+  background: linear-gradient(0deg, var(--color-cherry), var(--color-cherry)) no-repeat right bottom / 0 2px;
   transition: background-size 350ms;
   font-weight: 500;
 
@@ -36,12 +35,9 @@ a {
 
   &--white {
     border-bottom: 2px solid var(--color-almondmilk);
-    background: linear-gradient(
-        0deg,
+    background: linear-gradient(0deg,
         var(--color-almondmilk),
-        var(--color-almondmilk)
-      )
-      no-repeat right bottom / 0 2px;
+        var(--color-almondmilk)) no-repeat right bottom / 0 2px;
   }
 }
 
@@ -100,7 +96,7 @@ svg * {
 .meta-details {
   text-align: center;
   font-weight: 500;
-  color: var(--color-raspberry);
+  color: var(--color-kale);
   text-transform: uppercase;
   font-size: 80%;
 }
@@ -158,8 +154,7 @@ svg * {
 // Animation helpers
 
 [data-animate-in] {
-  animation: animate-in-from-bottom 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
+  animation: animate-in-from-bottom 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 [data-animate-down] {
